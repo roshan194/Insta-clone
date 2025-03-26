@@ -230,7 +230,7 @@ footer{
 
 .post {
     width: 460px;
-    margin-left: 126px;
+    margin-left: 10%;
     margin-top: 33px;
 }
 
@@ -349,4 +349,10 @@ footer{
     font-size: 14px;
     line-height: 18px;
 
+}
+
+@media screen and (max-width:1102px) {
+    footer{
+        display: none;
+    }
 }
