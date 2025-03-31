@@ -351,8 +351,63 @@ footer{
 
 }
 
-@media screen and (max-width:1102px) {
-    footer{
-        display: none;
+@media screen and (max-width: 768px) {
+    #main {
+        flex-direction: column;
+    }
+
+    #sidebar {
+        width: 100%;
+        height: auto;
+        border-right: none;
+        position: fixed;
+        bottom: 0;
+        background: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px 0;
+        border-top: 1px solid #DBDBDB;
+    }
+
+    #sidebar > img {
+        display: none; /* Hide logo */
+    }
+
+    #sidebar > ul {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        margin: 0;
+    }
+
+    #sidebar > ul > li {
+        padding: 10px;
+    }
+
+    #main-scrollable-container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    #stories-section {
+        width: 100%;
+        overflow-x: scroll;
+        white-space: nowrap;
+        scrollbar-width: none; /* Hide scrollbar */
+    }
+
+    .story {
+        flex-shrink: 0;
+        margin-right: 10px;
+    }
+
+    .post {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    footer {
+        display: none; /* Hide footer for mobile */
     }
 }
